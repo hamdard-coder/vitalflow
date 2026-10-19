@@ -64,7 +64,7 @@ const Virtual = () => {
           </div>
         </form>
         <div className="md:flex md:items-center md:gap-4 md:mt-16">
-          <p className="md:text-5xl">300K+</p>
+          <p className="md:text-5xl">200K+</p>
           <p className="md:text-[18px]">
             Cured satisfied patients <br /> around the globe
           </p>
