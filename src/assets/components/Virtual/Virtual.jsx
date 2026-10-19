@@ -59,13 +59,13 @@ const Virtual = () => {
           <div>
             <input
               type="Submit"
-              className="bg-[#4586ff] px-16 py-3 text-white text-[18px] rounded-full mt-6 cursor-pointer opacity-40"
+              className="bg-[#4586ff] px-16 py-3 text-white text-[18px] rounded-full mt-6 cursor-pointer opacity-40 w-full"
             ></input>
           </div>
         </form>
-        <div className="md:flex md:items-center md:gap-4 md:mt-16">
-          <p className="md:text-5xl">200K+</p>
-          <p className="md:text-[18px]">
+        <div className="flex item-center gap-2 mt-4 md:flex md:items-center md:gap-4 md:mt-16">
+          <p className=" text-4xl md:text-5xl">200K+</p>
+          <p className=" text-[16px] md:text-[18px]">
             Cured satisfied patients <br /> around the globe
           </p>
         </div>
