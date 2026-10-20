@@ -13,7 +13,7 @@ const BelowHero = () => {
         {/* image */}
         <div className="relative z-0 p-4 md:p-0">
           <img src={belowImage} className=" rounded-[30px]" alt="" />
-          <div className="w-80 bg-white shadow rounded-2xl md:absolute md:top-55 md:-left-10 absolute top-40 left-6">
+          <div className="w-80 bg-white shadow rounded-2xl md:absolute md:top-55 md:-left-10 absolute top-40 left-7">
             {/* innerContainer */}
             <div className="p-4">
               <div className="mb-4">
