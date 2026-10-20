@@ -1,9 +1,9 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { IoIosPlay } from "react-icons/io";
-import appointment1 from "../../VitalFlow-Images/hero/hero_image2.webp";
-import appointent2 from "../../VitalFlow-Images/hero/hero_image.webp";
-import hero from "../../VitalFlow-Images/hero/hero_image1.avif";
+import appointment1 from "../../assets/VitalFlow-Images/hero/hero_image2.webp";
+import appointent2 from "../../assets/VitalFlow-Images/hero/hero_image.webp";
+import hero from "../../assets/VitalFlow-Images/hero/hero_image1.avif";
 
 import Button from "../Button/Button";
 

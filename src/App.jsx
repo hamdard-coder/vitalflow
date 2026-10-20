@@ -1,14 +1,18 @@
 import { useState } from "react";
-import Navbar from "./assets/components/Navbar";
-import Hero from "./assets/components/Hero/Hero";
-import Virtual from "./assets/components/Virtual/Virtual";
+import Navbar from "./components/Navbar/Navbar";
+import Virtual from "./components/Virtual/Virtual";
+import Hero from "./components/Hero/Hero";
+
+
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Virtual />
+    <Navbar />
+    <Hero/>
+    <Virtual/>
+    
+     
     </>
   );
 }

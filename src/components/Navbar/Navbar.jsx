@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGripLines } from "react-icons/fa";
-import logo from "../VitalFlow-Images/logo/logo.svg";
-import Button from "./Button/Button";
+import logo from "../../assets/VitalFlow-Images/logo/logo.svg";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   return (
