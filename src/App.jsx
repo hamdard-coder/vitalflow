@@ -4,7 +4,6 @@ import Virtual from "./components/Virtual/Virtual";
 import Hero from "./components/Hero/Hero";
 import BelowHero from "./components/BelowHero/BelowHero";
 import Service from "./components/Service/Service";
-import ServiceCard from "./components/ServiceCard/ServiceCard";
 
 function App() {
   return (
