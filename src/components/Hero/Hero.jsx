@@ -37,7 +37,7 @@ const Hero = () => {
 
           {/* video */}
           <div className="flex items-center justify-center mt-8 gap-2 md:flex md:justify-start md:gap-4 md:mt-8 cursor-pointer">
-            <Button />
+            <Button title="Book a call" />
             <div className=" flex items-center gap-2 md:flex md:items-center md:gap-2">
               <span className="border border-gray-200 rounded-full p-2">
                 <IoIosPlay />

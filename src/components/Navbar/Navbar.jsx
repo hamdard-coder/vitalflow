@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
         {/* navBtn */}
         <div className="hidden md:block ">
-          <Button />
+          <Button title="Book a call"/>
         </div>
       </nav>
     </header>
