@@ -1,56 +1,57 @@
 import React from "react";
-import { FaGripLines } from "react-icons/fa";
+import Container from "../Container";
 import logo from "../../assets/VitalFlow-Images/logo/logo.svg";
 import Button from "../Button/Button";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 md:z-50 px-4 py-4  md:mx-auto md:max-w-6xl md:py-6 bg-white">
-      <nav className="md:flex md:justify-between ">
-        {/* logo */}
-        <div className=" flex justify-between items-center md:flex md:justify-center md:items-center cursor-pointer">
-          <div className="w-9.5 bg-[#4586ff]  md:flex md:justify-center p-2 rounded-xl flex">
-            <img src={logo} alt="" className="w-5.25" />
-            <span className="ml-4 md:hidden">Vital+Flow</span>
+    <header className="py-6">
+      <Container>
+        <nav className="flex items-center justify-between">
+          {/* logo */}
+          <div className="flex items-center gap-2">
+            <div className="w-9.5 h-9.5 bg-[#4586ff] rounded-xl flex items-center justify-center">
+              <img src={logo} alt="logo" className="w-5.25" />
+            </div>
+            <span className="font-semibold text-xl">Vital+Flow</span>
           </div>
-          <div className="flex flex-col gap-2 w-5 md:hidden">
-            <span className="h-0.5 w-full bg-black"></span>
-            <span className="h-0.5 w-full bg-black"></span>
+
+          <button className="flex flex-col items-center justify-center gap-2 lg:hidden">
+            <span className="block w-5 h-0.75 bg-black rounded-full "></span>
+            <span className="block w-5 h-0.75 bg-black rounded-full "></span>
+          </button>
+
+          {/* links-desktop */}
+          <div className="hidden lg:block">
+            <ul className="flex space-x-6 ">
+              <li>
+                <a href="" className="font-semibold">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="" className="font-semibold">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="" className="font-semibold">
+                  Doctors
+                </a>
+              </li>
+              <li>
+                <a href="" className="font-semibold">
+                  Blog
+                </a>
+              </li>
+            </ul>
           </div>
-          <span className="md:ml-2 md:text-2xl hidden md:block">
-            Vital+Flow
-          </span>
-        </div>
-        {/* links */}
-        <div className="hidden md:block">
-          <ul className="flex space-x-3">
-            <li>
-              <a href="" className="text-[18px]">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="" className="text-[18px]">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="" className="text-[18px]">
-                Doctors
-              </a>
-            </li>
-            <li>
-              <a href="" className="text-[18px]">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* navBtn */}
-        <div className="hidden md:block ">
-          <Button title="Book a call"/>
-        </div>
-      </nav>
+          {/* nav-button */}
+          <div className="hidden lg:block">
+            <Button title="Book a call" />
+          </div>
+        </nav>
+      </Container>
     </header>
   );
 };
