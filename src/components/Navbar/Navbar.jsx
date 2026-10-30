@@ -76,7 +76,7 @@ const Navbar = () => {
           isOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <div className="absolute top-6 left-6 flex items-center gap-2">
+        <div className="absolute top-6 left-4 flex items-center gap-2">
           <div className="w-9.5 h-9.5 bg-[#4586ff] rounded-xl flex items-center justify-center">
             <img src={logo} alt="Vital+Flow logo" className="w-5.25" />
           </div>
