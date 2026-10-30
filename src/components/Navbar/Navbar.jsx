@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="py-6">
+    <header className="py-6 fixed left-0 right-0 z-100 bg-white">
       <Container>
         <nav className="flex items-center justify-between">
           {/* logo */}
