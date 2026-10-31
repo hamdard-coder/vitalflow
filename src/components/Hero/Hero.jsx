@@ -9,7 +9,7 @@ import hero3 from "../../assets/VitalFlow-Images/hero/hero_image2.webp";
 
 const Hero = () => {
   return (
-    <section className="py-30">
+    <section className="pt-30">
       <Container>
         {/* main hero content */}
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-40">
