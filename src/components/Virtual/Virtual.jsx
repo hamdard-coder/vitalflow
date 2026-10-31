@@ -10,7 +10,9 @@ const Virtual = () => {
         <div className="bg-blue-50 p-10 rounded-4xl">
           {/* header */}
           <div className="flex flex-wrap items-center gap-4 pb-14">
-            <div className="text-2xl lg:text-4xl font-semibold">Virtual Consultation</div>
+            <div className="text-2xl lg:text-4xl font-semibold">
+              Virtual Consultation
+            </div>
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1">
                 <FaStar className="text-yellow-400 text-xl" />
@@ -60,11 +62,11 @@ const Virtual = () => {
             <div>
               <input
                 type="Submit"
-                className="bg-[#4586ff] text-white py-4 px-16 mt-8 rounded-full font-semibold"
+                className="bg-[#4586ff] text-white py-4 px-16 mt-8 rounded-full font-semibold w-full"
               />
             </div>
           </form>
-          <div className="flex items-center gap-2 pt-12">
+          <div className="flex flex-wrap items-center gap-2 pt-12">
             <p className=" text-2xl lg:text-4xl font-semibold">200K+</p>
             <p>
               Cured satisfied <br /> patients around the globe
