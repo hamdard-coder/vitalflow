@@ -62,7 +62,7 @@ const Virtual = () => {
             <div>
               <input
                 type="Submit"
-                className="bg-[#4586ff] text-white py-4 px-16 mt-8 rounded-full font-semibold w-full"
+                className="bg-[#4586ff] text-white py-4 px-16 mt-8 rounded-full font-semibold w-full cursor-pointer"
               />
             </div>
           </form>
