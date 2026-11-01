@@ -60,7 +60,7 @@ const BelowHero = () => {
             <div className="relative">
               <img src={below1} className="w-120 rounded-3xl" alt="" />
 
-              <div className="absolute w-75 lg:w-[320px] h-78 shadow bg-white rounded-2xl lg:-bottom-12 lg:-left-12 lg:top-40 left-5 top-18">
+              <div className="absolute w-70  lg:w-[320px] h-78 shadow bg-white rounded-2xl lg:-bottom-12 lg:-left-12 lg:top-40 left-8 top-30 md:w-100 md:top-50 md:left-8">
                 <div className="p-4">
                   <div>
                     <h3 className="font-semibold text-xl">Available Doctors</h3>
@@ -96,7 +96,7 @@ const BelowHero = () => {
                     </div>
                   </div>
                   <div className="mt-4 flex items-center justify-center">
-                    <a href="" className="bg-blue-50 text-blue-400 px-10 py-3 lg:px-18 lg:py-3 rounded-xl">
+                    <a href="" className="bg-blue-50 text-blue-400 px-10 py-3 lg:px-18 lg:py-3 md:px-18 md:py-3 rounded-xl">
                       Meet Our Experts
                     </a>
                   </div>
