@@ -25,8 +25,8 @@ const BelowHero = () => {
             </div>
 
             <div className="flex items-center gap-6">
-              <div className="flex items-center justify-center lg:w-16 lg:h-12 border-2 border-gray-300 rounded-full mb-4 ">
-                <span className="p-2 lg:p-0">01</span>
+              <div className="flex items-center justify-center w-12 h-12 md:w-13 md:h-13 lg:w-13 lg:h-13 shrink-0 border-2 border-gray-300 rounded-full mb-4 ">
+                <p className="font-semibold">01</p>
               </div>
               <div>
                 <h2 className="text-2xl font-semibold">
@@ -39,8 +39,8 @@ const BelowHero = () => {
               </div>
             </div>
             <div className="flex items-center gap-6 mt-8">
-              <div className="flex items-center justify-center  lg:w-16 lg:h-12 border-2 border-gray-300 rounded-full mb-4 ">
-                <span className="p-2 lg:p-0">02</span>
+              <div className="flex items-center justify-center  w-12 h-12 md:w-13 md:h-13 lg:w-13 lg:h-13 shrink-0 border-2 border-gray-300 rounded-full mb-4 ">
+                <p className="font-semibold">02</p>
               </div>
               <div>
                 <h2 className="text-2xl font-semibold">Advanced Technology</h2>
@@ -96,7 +96,10 @@ const BelowHero = () => {
                     </div>
                   </div>
                   <div className="mt-4 flex items-center justify-center">
-                    <a href="" className="bg-blue-50 text-blue-400 px-10 py-3 lg:px-18 lg:py-3 md:px-18 md:py-3 rounded-xl">
+                    <a
+                      href=""
+                      className="bg-blue-50 text-blue-400 px-10 py-3 lg:px-18 lg:py-3 md:px-18 md:py-3 rounded-xl"
+                    >
                       Meet Our Experts
                     </a>
                   </div>
