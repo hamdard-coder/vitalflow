@@ -5,6 +5,7 @@ import Virtual from "./components/Virtual/Virtual";
 import BelowHero from "./components/BelowHero/BelowHero";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import Service from "./components/Service/Service";
+import AboutUs from "./components/AboutUs/AboutUs";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Virtual />
       <BelowHero/>
       <Service/>
+      <AboutUs/>
     </>
   );
 }
