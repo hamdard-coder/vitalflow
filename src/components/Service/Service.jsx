@@ -5,7 +5,7 @@ import data from "../ServiceCard/data";
 
 const Service = () => {
   return (
-    <section className="py-40 lg:py-12 md:py-30">
+    <section className="pt-40 pb-12 lg:py-12 md:py-30">
       <Container>
         <header>
           <div className="flex items-center justify-center gap-2">
