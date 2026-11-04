@@ -6,6 +6,7 @@ import BelowHero from "./components/BelowHero/BelowHero";
 import ServiceCard from "./components/ServiceCard/ServiceCard";
 import Service from "./components/Service/Service";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <BelowHero/>
       <Service/>
       <AboutUs/>
+      <Contact/>
     </>
   );
 }

@@ -9,11 +9,11 @@ const AboutUs = () => {
   return (
     <section className="py-12">
       <Container>
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 gap-4">
           {/* main container */}
-          <div className="flex justify-start">
+          <div className="lg:flex lg:justify-start">
             {/* right */}
-            <div className="relative">
+            <div className="relative md:flex md:justify-center md:items-center">
               <img src={about1} className="w-138 h-130 rounded-3xl" alt="" />
             </div>
           </div>

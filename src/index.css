@@ -1,1 +1,5 @@
 @import "tailwindcss";
+.date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(1);
+}
