@@ -23,19 +23,19 @@ const Footer = () => {
               <Button title="Book a call" />
             </div>
           </div>
-          <div className="lg:col-start-2 lg:col-end-4 ">
+          <div className=" col-span-1 lg:col-span-2 ">
             <header className="text-2xl font-semibold ">Stay up to date</header>
 
             <div className="flex gap-4 pt-4 ">
               <input
                 type="text"
                 placeholder="name@email.com"
-                className=" bg-[#f5faff] pl-4 pr-30 rounded-xl outline-0"
+                className=" bg-[#f5faff] pl-4 lg:pr-30 rounded-xl outline-0"
               />
 
               <a
                 href=""
-                className="bg-[#4586ff] px-10 py-4 font-semibold rounded-2xl text-white"
+                className="bg-[#4586ff] px-10 py-4 font-semibold rounded-2xl text-white shrink-0"
               >
                 Subscribe
               </a>
@@ -44,7 +44,7 @@ const Footer = () => {
               by subscribing you will agree to privacy and policy
             </p>
 
-            <div className="">
+            <div>
               <div className="py-16 flex gap-18">
                 <div className="flex flex-col gap-2 text-gray-500">
                   <h3 className="pb-4 font-semibold text-xl text-black">
