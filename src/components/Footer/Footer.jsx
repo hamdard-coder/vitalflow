@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section className=" mt-10">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3  lg:gap-20 ">
           <div>
             {/* left  */}
             <div className="flex items-center gap-2">
@@ -23,7 +23,7 @@ const Footer = () => {
               <Button title="Book a call" />
             </div>
           </div>
-          <div className=" col-span-1 lg:col-span-2 ">
+          <div className=" col-span-1 lg:col-span-2 mt-4">
             <header className="text-2xl font-semibold ">Stay up to date</header>
 
             <div className="flex gap-4 pt-4 ">
@@ -45,7 +45,7 @@ const Footer = () => {
             </p>
 
             <div>
-              <div className="py-16 flex gap-18">
+              <div className="py-16 flex md:gap-18 lg:gap-18">
                 <div className="flex flex-col gap-2 text-gray-500">
                   <h3 className="pb-4 font-semibold text-xl text-black">
                     Static pages
