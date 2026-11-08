@@ -24,7 +24,9 @@ const Footer = () => {
             </div>
           </div>
           <div className=" col-span-1 lg:col-span-2 mt-4">
-            <header className="text-2xl font-semibold ">Stay up to date</header>
+            <header className="pt-8 lg:pt-0 md:pt-0 text-2xl font-semibold ">
+              Stay up to date
+            </header>
 
             <div className="flex gap-2 lg:gap-4 md:gap-4 pt-4 ">
               <input
