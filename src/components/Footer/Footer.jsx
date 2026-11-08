@@ -45,7 +45,7 @@ const Footer = () => {
             </p>
 
             <div>
-              <div className="py-16 flex md:gap-18 lg:gap-18">
+              <div className="py-16 grid grid-cols-2 gap-2 place-items-center md:grid-cols-4 lg:grid-cols-4 md:gap-18 lg:gap-18">
                 <div className="flex flex-col gap-2 text-gray-500">
                   <h3 className="pb-4 font-semibold text-xl text-black">
                     Static pages
