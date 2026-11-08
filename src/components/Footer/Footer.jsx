@@ -35,7 +35,7 @@ const Footer = () => {
 
               <a
                 href=""
-                className="bg-[#4586ff] px-10 py-4 font-semibold rounded-2xl text-white shrink-0"
+                className="bg-[#4586ff] px-10 py-4 font-semibold rounded-2xl text-white "
               >
                 Subscribe
               </a>
