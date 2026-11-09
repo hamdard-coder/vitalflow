@@ -11,7 +11,6 @@ const LandingPage = () => {
         <Hero />
         <Virtual />
         <BelowHero />
-        <Contact />
       </main>
     </>
   );
