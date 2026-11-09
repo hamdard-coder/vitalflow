@@ -77,49 +77,49 @@ const Navbar = () => {
           isOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <div className="absolute top-6 left-4 flex items-center gap-2">
+        <Link to="/" className="absolute top-6 left-4 flex items-center gap-2">
           <div className="w-9.5 h-9.5 bg-[#4586ff] rounded-xl flex items-center justify-center">
             <img src={logo} alt="Vital+Flow logo" className="w-5.25" />
           </div>
           <span className="font-semibold text-xl">Vital+Flow</span>
-        </div>
+        </Link>
 
         <ul className="flex flex-col items-center gap-8">
           <li>
-            <a
-              href=""
+            <NavLink
+              to="/about"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-semibold"
             >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href=""
+            <NavLink
+              to="/services"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-semibold"
             >
               Services
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href=""
+            <NavLink
+              to="/doctors"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-semibold"
             >
               Doctors
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href=""
+            <NavLink
+              to="/blog"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-semibold"
             >
               Blog
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
