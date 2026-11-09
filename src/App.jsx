@@ -3,21 +3,26 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Virtual from "./components/Virtual/Virtual";
 import BelowHero from "./components/BelowHero/BelowHero";
-import Service from "./components/Service/Service";
-import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Blog from "./pages/Blog";
+import Doctors from "./pages/Doctors";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Virtual />
-      <BelowHero />
-      <Service />
-      <AboutUs />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/doctors" element={<Doctors />} />
+      </Routes>
       <Footer />
     </>
   );

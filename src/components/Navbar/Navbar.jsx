@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "../Container";
 import logo from "../../assets/VitalFlow-Images/logo/logo.svg";
 import Button from "../Button/Button";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,12 +12,12 @@ const Navbar = () => {
       <Container>
         <nav className="flex items-center justify-between">
           {/* logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-9.5 h-9.5 bg-[#4586ff] rounded-xl flex items-center justify-center">
               <img src={logo} alt="logo" className="w-5.25" />
             </div>
             <span className="font-semibold text-xl">Vital+Flow</span>
-          </div>
+          </Link>
 
           {/* mobile */}
           <button
@@ -41,24 +42,24 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <ul className="flex space-x-6 ">
               <li>
-                <a href="" className="font-semibold">
+                <NavLink to="/about" className="font-semibold">
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="" className="font-semibold">
+                <NavLink to="/services" className="font-semibold">
                   Services
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="" className="font-semibold">
+                <NavLink to="/doctors" className="font-semibold">
                   Doctors
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="" className="font-semibold">
+                <NavLink to="/blog" className="font-semibold">
                   Blog
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
