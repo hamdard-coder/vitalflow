@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import Container from "../Container";
 import Button from "../Button/Button";
 import below1 from "../../assets/VitalFlow-Images/below_hero/image1.avif";
@@ -12,7 +13,12 @@ const BelowHero = () => {
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2">
           {/* main container */}
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             {/* left */}
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#4586ff] "></div>
@@ -53,9 +59,15 @@ const BelowHero = () => {
             <div className="my-12">
               <Button title="Get Started" />
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex justify-end">
+          <motion.div
+            className="flex justify-end"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             {/* right */}
             <div className="relative">
               <img src={below1} className="w-120 rounded-3xl" alt="" />
@@ -106,7 +118,7 @@ const BelowHero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import Container from "../Container";
 import { FaStar } from "react-icons/fa";
 
@@ -7,7 +8,13 @@ const Virtual = () => {
     <section className="py-18">
       <Container>
         {/* main container */}
-        <div className="bg-blue-50 p-10 rounded-4xl">
+        <motion.div
+          className="bg-blue-50 p-10 rounded-4xl"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           {/* header */}
           <div className="flex flex-wrap items-center gap-4 pb-14">
             <div className="text-2xl lg:text-4xl font-semibold">
@@ -72,7 +79,7 @@ const Virtual = () => {
               Cured satisfied <br /> patients around the globe
             </p>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </section>
   );

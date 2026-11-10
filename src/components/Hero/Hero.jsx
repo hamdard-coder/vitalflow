@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import Container from "../Container";
 import hero1 from "../../assets/VitalFlow-Images/hero/hero_image1.avif";
 import { FaStar } from "react-icons/fa";
@@ -14,7 +15,13 @@ const Hero = () => {
         {/* main hero content */}
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-40">
           {/* left hero content */}
-          <div className="py-20">
+          <motion.div
+            className="py-20"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             {/* rate */}
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1">
@@ -70,16 +77,21 @@ const Hero = () => {
                 <p className=" text-gray-500">Patients booked already</p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* right hero content */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             <img
               src={hero1}
               alt="image"
               className="rounded-[50px] w-full object-cover object-center "
             />
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>

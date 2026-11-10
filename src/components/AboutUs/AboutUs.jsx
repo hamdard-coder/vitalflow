@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import Container from "../Container";
 import Button from "../Button/Button";
 import about1 from "../../assets/VitalFlow-Images/aboutUs/about.avif";
@@ -11,14 +12,25 @@ const AboutUs = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 gap-4">
           {/* main container */}
-          <div className="lg:flex lg:justify-start">
+          <motion.div
+            className="lg:flex lg:justify-start"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             {/* right */}
             <div className="relative md:flex md:justify-center md:items-center">
               <img src={about1} className="w-138 h-130 rounded-3xl" alt="" />
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             {/* left */}
             <div className="flex items-center gap-2 pt-12 lg:pt-0 ">
               <div className="w-2 h-2 rounded-full bg-[#4586ff] "></div>
@@ -31,8 +43,10 @@ const AboutUs = () => {
             </div>
 
             <div className="flex items-center gap-6">
-              <div className="flex items-center justify-center w-12 h-12  shrink-0  mb-4 
-              rounded-full shadow bg-white p-3">
+              <div
+                className="flex items-center justify-center w-12 h-12  shrink-0  mb-4 
+              rounded-full shadow bg-white p-3"
+              >
                 <img src={about2} className="" />
               </div>
               <div className="py-4">
@@ -58,7 +72,7 @@ const AboutUs = () => {
             <div className="my-12">
               <Button title="What we do" />
             </div>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>
